@@ -1,5 +1,5 @@
 {
-    "name": "angular",
+    "name": "orgchart-angular",
     "version": "6.17.0",
     "scripts": {
         "copy-avatars": "cp -R ../../../img/avatars ./src/assets",
