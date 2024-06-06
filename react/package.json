@@ -1,9 +1,9 @@
 {
     "name": "orgchart-react",
-    "version": "6.23.0",
+    "version": "6.24.0",
     "private": true,
     "dependencies": {
-        "@jsplumbtoolkit/browser-ui-react": "^6.23.0",
+        "@jsplumbtoolkit/browser-ui-react": "^6.24.0",
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
@@ -13,7 +13,7 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "copy-avatars": "cp -R ../../../img/avatars ./public",
+        "copy-avatars": "cp -R ../avatars ./public",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",

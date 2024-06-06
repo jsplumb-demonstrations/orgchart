@@ -1,10 +1,10 @@
 {
     "name": "orgchart-es6",
-    "version": "6.23.0",
+    "version": "6.24.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "copy-avatars": "cp -R ../../../img/avatars .",
+        "copy-avatars": "cp -R ../avatars .",
         "build-es6": "./node_modules/.bin/esbuild demo.js --target=es2016 --bundle --format=iife --outfile=bundle.js",
         "build-es6-min": "./node_modules/.bin/esbuild demo.js --target=es2016 --bundle --minify --format=iife --outfile=bundle-min.js",
         "transpile-es5": "./node_modules/.bin/babel bundle.js -o bundle-es5.js",
@@ -23,6 +23,6 @@
         "http-server": "^14.1.1"
     },
     "dependencies": {
-        "@jsplumbtoolkit/browser-ui": "^6.23.0"
+        "@jsplumbtoolkit/browser-ui": "^6.24.0"
     }
 }

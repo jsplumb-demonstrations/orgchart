@@ -1,14 +1,14 @@
 {
     "name": "orgchart-vue2",
-    "version": "6.23.0",
+    "version": "6.24.0",
     "scripts": {
-        "copy-avatars": "cp -R ../../../img/avatars ./public/avatars",
+        "copy-avatars": "cp -R ../avatars ./public/avatars",
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview --port 4173"
     },
     "dependencies": {
-        "@jsplumbtoolkit/browser-ui-vue2": "^6.23.0",
+        "@jsplumbtoolkit/browser-ui-vue2": "^6.24.0",
         "vue": "^2.7.7"
     },
     "devDependencies": {

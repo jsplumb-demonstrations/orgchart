@@ -1,15 +1,15 @@
 {
     "name": "orgchart-vue3",
-    "version": "6.23.0",
+    "version": "6.24.0",
     "private": true,
     "scripts": {
-        "copy-avatars": "cp -R ../../../img/avatars ./public/avatars",
+        "copy-avatars": "cp -R ../avatars ./public/avatars",
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview"
     },
     "dependencies": {
-        "@jsplumbtoolkit/browser-ui-vue3": "^6.23.0",
+        "@jsplumbtoolkit/browser-ui-vue3": "^6.24.0",
         "vue": "^3.3.4"
     },
     "devDependencies": {
