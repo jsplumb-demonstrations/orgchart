@@ -1,11 +1,11 @@
 
 import './App.css';
-import OrgchartComponent from "./OrgchartComponent";
+import Orgchart from "./OrgchartComponent";
 
 function App() {
   return (
     <div className="App">
-      <OrgchartComponent/>
+      <Orgchart/>
     </div>
   );
 }
