@@ -3,7 +3,7 @@ import {AnchorLocations, BlankEndpoint, DEFAULT, EVENT_CANVAS_CLICK, EVENT_TAP, 
   PlainArrowOverlay,
   Surface,
   Vertex} from '@jsplumbtoolkit/browser-ui'
-import {BrowserUIAngular, jsPlumbService, jsPlumbSurfaceComponent} from "@jsplumbtoolkit/browser-ui-angular"
+import {BrowserUIAngular, jsPlumbService, SurfaceComponent} from "@jsplumbtoolkit/browser-ui-angular"
 import {PersonComponent} from "./person.component"
 
 @Component({
@@ -14,8 +14,7 @@ import {PersonComponent} from "./person.component"
 export class AppComponent {
   title = 'orgchart';
 
-  @ViewChild(jsPlumbSurfaceComponent)
-  surfaceComponent!: jsPlumbSurfaceComponent
+  @ViewChild(SurfaceComponent) surfaceComponent!: SurfaceComponent
 
   toolkit!: BrowserUIAngular
   surface!: Surface
