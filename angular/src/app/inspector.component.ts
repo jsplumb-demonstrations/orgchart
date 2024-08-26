@@ -1,7 +1,7 @@
 import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, Output} from "@angular/core"
 
 import { Node, Base, Inspector, Vertex, Edge, JsPlumbToolkit, Surface } from "@jsplumbtoolkit/browser-ui"
-import {jsPlumbService} from "@jsplumbtoolkit/browser-ui-angular"
+import {DEFAULT_ANGULAR_SURFACE_ID, jsPlumbService} from "@jsplumbtoolkit/browser-ui-angular"
 
 @Component({
   template:`
@@ -24,7 +24,7 @@ export class InspectorComponent implements AfterViewInit {
   reports:Array<Vertex> = []
   manager!:Node|null
 
-  @Input() surfaceId!:string
+  @Input() surfaceId:string = DEFAULT_ANGULAR_SURFACE_ID
 
   @Output() personSelected:EventEmitter<Vertex> = new EventEmitter<Vertex>()
 
