@@ -2,8 +2,8 @@
     <div style="width:100%;height:100%;display:flex">
         <div class="jtk-demo-canvas">
             <SurfaceComponent ref="toolkitComponent"
-                             :render-params="this.renderParams()"
-                             :view="this.viewParams()"
+                             :renderOptions="this.renderParams()"
+                             :viewOptions="this.viewParams()"
                              url="dataset.json">
 
             </SurfaceComponent>
