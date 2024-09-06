@@ -1,19 +1,17 @@
 <template>
     <div style="width:100%;height:100%;display:flex">
         <div class="jtk-demo-canvas">
-            <jsplumb-toolkit ref="toolkitComponent"
-                             surface-id="surfaceId"
+            <SurfaceComponent ref="toolkitComponent"
                              :render-params="this.renderParams()"
                              :view="this.viewParams()"
-                             url="dataset.json"
-            >
+                             url="dataset.json">
 
-            </jsplumb-toolkit>
-            <jsplumb-miniview surface-id="surfaceId"></jsplumb-miniview>
+            </SurfaceComponent>
+            <MiniviewComponent/>
         </div>
         <div class="jtk-demo-rhs">
             <div id="inspector">
-                <Inspector surface-id="surfaceId" v-bind:selectPerson="selectPerson"></Inspector>
+                <Inspector v-bind:selectPerson="selectPerson"></Inspector>
             </div>
             <div class="description">
 
