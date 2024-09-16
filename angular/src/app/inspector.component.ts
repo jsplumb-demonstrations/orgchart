@@ -53,6 +53,7 @@ export class InspectorComponent implements AfterViewInit {
           this.current = null
           this.manager = null
           this.reports.length = 0
+          this.changeDetector.detectChanges()
         },
         refresh:(obj:Base, cb:() => void) => {
           this.current = obj as Node
