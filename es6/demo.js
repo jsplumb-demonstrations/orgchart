@@ -25,6 +25,8 @@ ready(() => {
 
     window.tk = toolkit
 
+    // Set the tapped person as the current selection, which will make them
+    // appear in the inspector. Also center on and zoom to the person in the surface.
     function selectPerson(id) {
         toolkit.setSelection(id)
         surface.centerOnAndZoom(id, 0.15)
@@ -46,14 +48,7 @@ ready(() => {
                         </div>`,
                     events:{
                         [EVENT_TAP]:(p) => {
-                            // set the tapped person as the current selection, which will make them
-                            // appear in the inspector.
-                            //toolkit.setSelection(p.obj)
-                            // center on the tapped person and zoom the display
-                            //surface.centerOnAndZoom(p.obj, 0.15)
-                            //const s = toolkit.selectDescendants(p.obj)
                             selectPerson(p.obj.id)
-
                         }
                     }
                 }
