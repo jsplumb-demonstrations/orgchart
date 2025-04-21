@@ -1,4 +1,4 @@
-import {Component, ViewChild} from '@angular/core'
+import {Component, inject, ViewChild} from '@angular/core'
 import {AnchorLocations, BlankEndpoint, DEFAULT, EVENT_CANVAS_CLICK, EVENT_TAP, HierarchyLayout, Node,
   PlainArrowOverlay,
   Surface,
@@ -19,7 +19,7 @@ export class AppComponent {
   toolkit!: BrowserUIAngular
   surface!: Surface
 
-  constructor(public $jsplumb:jsPlumbService) { }
+  $jsplumb = inject(jsPlumbService)
 
   ngAfterViewInit() {
 
