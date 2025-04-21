@@ -4,12 +4,12 @@ import {jsPlumbToolkitModule} from '@jsplumbtoolkit/browser-ui-angular'
 
 import { AppComponent } from './app.component';
 import {PersonComponent} from "./person.component"
-import {InspectorComponent} from "./inspector.component"
+import {OrgChartInspectorComponent} from "./inspector.component"
 import {InspectorPersonComponent} from "./inspector-person.component"
 
 @NgModule({
   declarations: [
-    AppComponent, PersonComponent, InspectorComponent, InspectorPersonComponent
+    AppComponent, PersonComponent, OrgChartInspectorComponent, InspectorPersonComponent
   ],
   imports: [
     BrowserModule, jsPlumbToolkitModule
