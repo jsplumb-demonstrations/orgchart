@@ -1,6 +1,6 @@
 {
     "name": "orgchart-es6",
-    "version": "7.3.0",
+    "version": "7.3.1",
     "scripts": {
         "copy-avatars": "cp -R ../avatars .",
         "build-es6": "./node_modules/.bin/esbuild demo.js --target=es2016 --bundle --format=iife --outfile=bundle.js",
@@ -21,6 +21,6 @@
         "http-server": "^14.1.1"
     },
     "dependencies": {
-        "@jsplumbtoolkit/browser-ui": "^7.3.0"
+        "@jsplumbtoolkit/browser-ui": "^7.3.1"
     }
 }
